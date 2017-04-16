@@ -6,10 +6,10 @@ close all;
 
 % coordinate of start and goal
 start_x = 5;
-start_y = 5;
+start_y = 1;
 
-goal_x = 0;
-goal_y = 0;
+goal_x = 2;
+goal_y = 6;
 
 % Initial orientation theta
 theta_init = 0;
@@ -73,6 +73,7 @@ for a = -2 : 0.5 : 2
             delta_t = deltaT(v_s, a, delta_epsilon);
             % update time t
             t = t + 1;
+            %t = t + delta_t;
             % update dist_prev
             dist_prev = dist;
         end
@@ -80,9 +81,11 @@ for a = -2 : 0.5 : 2
 
 end
 
+Trajectory(v_init,w_init,theta_init,a_min,gamma_min,delta_epsilon,t_min,start_x,start_y);
+
 % plot test
-figure(1), plot(start_x, start_y), hold on;
-plot(goal_x, goal_y), hold on;
+plot(start_x, start_y,'*'), hold on;
+plot(goal_x, goal_y,'*'), hold on;
 plot(x_min, y_min, '*');
 
 

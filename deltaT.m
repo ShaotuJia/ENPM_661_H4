@@ -3,7 +3,7 @@
 function delta_t = deltaT(v_init, a, epsilon)
 
 syms t;
-delta_epsilon = @(t) v_init * t + (1/2) * a * (t^2) - epsilon;
+delta_epsilon = @(t) v_init * t + (1/2) * a * (t^2) - epsilon * (a/abs(a));
 roots = solve(delta_epsilon,t, 'Real', true);
 roots = double(roots);
 roots = roots(roots > 0);
