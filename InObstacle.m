@@ -2,7 +2,7 @@
  
 function logic = InObstacle(NodeTemp)
 
-obstacles = load ('obstacles.txt'); % load obstacle data
+obstacles = load ('obstaclesH4.txt'); % load obstacle data
 
 %draw obstacles in graph
 drawCircle(obstacles);

@@ -10,5 +10,4 @@ NodeNew.y = NodeNear.y + (NodeRand.y - NodeNear.y) * (epsilon/dist);
 
 NodeNew.previous = NodeNear;
 
-
 end

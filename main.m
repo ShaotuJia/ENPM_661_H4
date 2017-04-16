@@ -14,21 +14,25 @@ close all;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % !!!change this section for different inputs!!!
-% Initialize Problem_5 requirements
+% Initialize Problem_1 requirements
 start.x = 1;
 start.y = 99;
+start.theta = pi;
+start.v = 0;
+start.w = 0;
 start.previous.x = -1;
 start.previous.y = -1;
+
 goal.x = 100;
 goal.y = 0;
 goal.R = 20;
-epsilon = 1; % the increment of every step
+epsilon = 5; % the increment of every step
 
 %Initialize Maximum Node Number
 K = 4000;
 
 %Initialize the figure
-figure(1), title('Problem 5 RRT Graph'), axis ([0 100 0 100]), hold on;
+figure(1), title('Problem 1 RRT Graph'), axis ([0 100 0 100]), hold on;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Initialize NodeInitial
@@ -71,8 +75,7 @@ for k = 1 : K
         disp('find the goal');
         return;
         
-    end
-              
+    end           
     
 end
 
