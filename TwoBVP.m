@@ -4,10 +4,10 @@
 % @Function Trajectory
 % @Brief: This function is to find the closest node that the car can
 % achieve within certain boundary condition. 
-% The curved trajectory is separated to small straghit line segments. The
+% The curved trajectory is separated to small straight line segments. The
 % segment increase in each time and will be checked by boundary condition.
-% If the increment under the condtion, keep this increment. Otherwise, stop
-% the increment. Finally, this function will output point that is the target
+% If the increment under the boundary condtions, keep this increment. Otherwise, stop
+% the increment. Finally, this function will output a point that is either the target
 % or closest to the target. 
 % The boundary conditions are as follow: 
 % First, the trajectory must to go forward to the target point. 
