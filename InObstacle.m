@@ -1,11 +1,6 @@
 %Collision Detector
  
-function logic = InObstacle(NodeTemp)
-
-obstacles = load ('obstaclesH4.txt'); % load obstacle data
-
-%draw obstacles in graph
-drawCircle(obstacles);
+function logic = InObstacle(NodeTemp,obstacles)
 
 %find the number of obstacles
 N = length(obstacles(:,1));
@@ -18,8 +13,7 @@ for i = 1 : N
     
     %distance between obstacle center to new Node
     dist = sqrt((NodeTemp.x - OB(1))^2 + (NodeTemp.y - OB(2))^2);
-    
-    
+       
    if dist <= OB(3)
         logic = true;
         break;

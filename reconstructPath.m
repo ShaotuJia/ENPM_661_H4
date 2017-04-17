@@ -2,7 +2,7 @@
 
 function reconstructPath(start , goal)
  
- temp = goal;
+ temp = goal.previous;
  
  plot (start.x , start.y , '*', 'MarkerEdgeColor' , 'black');
  hold on;
@@ -11,10 +11,7 @@ function reconstructPath(start , goal)
  
  while temp.x ~= start.x || temp.y ~= start.y
      
-     Path.x = [temp.previous.x temp.x];
-     Path.y = [temp.previous.y temp.y];
-     
-     h = line(Path.x , Path.y );
+     h = line(temp.line.XData, temp.line.YData);
      h.Color = 'green';
      hold on;
      
