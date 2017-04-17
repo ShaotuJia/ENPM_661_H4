@@ -1,4 +1,5 @@
-% This function is to draw obstacle in the graph
+%@Author: Shaotu Jia
+%@Brief: This function is to draw obstacle in the graph
 
 function drawCircle(obstacles)
 

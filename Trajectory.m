@@ -1,4 +1,5 @@
-% This function is to draw the trajectory between two points
+% @Author: Shaotu Jia
+% @Brief: This function is to draw the trajectory between two points
 
 function h = Trajectory(v_init, w_init, theta_init, a, gamma, t_min,x_start, y_start)
 
@@ -22,7 +23,6 @@ deltaY = integral(delta_y, 0 , t, 'ArrayValued',true);
 % Get end point of small increment
 seg_X(end + 1) = x_start + deltaX;
 seg_Y(end + 1) = y_start + deltaY;
-
 
 end
 

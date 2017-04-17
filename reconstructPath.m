@@ -1,4 +1,5 @@
-%This function is to reconstruct the path when reaching the goal
+%@Author: Shaotu Jia
+%@Brief: This function is to reconstruct the path when reaching the goal
 
 function reconstructPath(start , goal)
  

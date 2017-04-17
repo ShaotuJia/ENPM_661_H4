@@ -1,4 +1,20 @@
-% This function is to find the closest node that the car can achieve
+% @Author: Shaotu Jia
+% @function sideSame
+% @function InObstacle
+% @Function Trajectory
+% @Brief: This function is to find the closest node that the car can
+% achieve within certain boundary condition. 
+% The curved trajectory is separated to small straghit line segments. The
+% segment increase in each time and will be checked by boundary condition.
+% If the increment under the condtion, keep this increment. Otherwise, stop
+% the increment. Finally, this function will output point that is the target
+% or closest to the target. 
+% The boundary conditions are as follow: 
+% First, the trajectory must to go forward to the target point. 
+% This is controlled by the function sideSame. If the new points goes away
+% from the target point. The trajectory increment will stop.
+% Second, x, y, theta, gamma, a, w, v must be under the limitation given in
+% H4.txt. Once a parameter is beyond its range the increment will stop. 
 
 function ReachNode = TwoBVP(start,goal,obstacles)
 

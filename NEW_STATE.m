@@ -1,4 +1,5 @@
-%This function generate the new Node
+%@Author: Shaotu Jia
+%@Brief: This function generate the new Node
 
 function NodeNew = NEW_STATE(NodeNear, NodeRand, epsilon)
 

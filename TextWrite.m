@@ -1,4 +1,5 @@
-% This script is to generate text file 
+%@Author: Shaotu Jia
+%@Brief: This script is to generate text file 
 
 temp = goal.previous;
 i = [];

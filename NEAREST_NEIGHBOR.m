@@ -1,4 +1,5 @@
-% This function is to find nearest Node to the rand Node
+%@Author: Shaotu Jia
+%@Brief: This function is to find nearest Node to the rand Node
 
 function NodeNear = NEAREST_NEIGHBOR(NodeRand, closeSet)
 

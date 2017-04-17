@@ -1,4 +1,5 @@
-% check whether the trajectory cross the line between start to goal
+%@Author: Shaotu Jia
+%@Brief: check whether the trajectory cross the line between start to goal
 %@param result_prev This is vector * normal in previous loop round
 function [logical, result] = sideSame(result_prev, Node, normalVector, global_start)
 

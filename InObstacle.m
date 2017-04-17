@@ -1,4 +1,6 @@
-%Collision Detector
+%@Author: Shaotu Jia
+%@Brief: This function is to check whether the point is inside the
+%obstacle circles.
  
 function logic = InObstacle(NodeTemp,obstacles)
 

@@ -1,4 +1,5 @@
-%This function is to generate random Node in graph 100 * 100
+%@Author: Shaotu Jia
+%@Brief: This function is to generate random Node in graph 100 * 100
 
 function NodeRand = RANDOM_STATE()
 

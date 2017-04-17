@@ -73,10 +73,8 @@ for k = 1 : K
         reconstructPath(start , goal);
         print('-f1','Problem_5','-djpeg');
         disp('find the goal');
-        return;
-        
-    end
-      
+        return;     
+    end    
 end
 
 
